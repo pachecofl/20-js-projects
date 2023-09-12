@@ -1,0 +1,97 @@
+/* Background and general */
+body {
+  background-color: #2a2d3d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* legend */
+.seats-legend,
+.legend {
+  display: flex;
+}
+
+.seats-legend {
+  width: 300px;
+  justify-content: space-between;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+.legend {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+.legend div {
+  margin-right: 5px;
+}
+/* seats */
+.seats-selection {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+.seat-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6px;
+}
+.bk-s {
+  width: 50px;
+}
+.bk-g {
+  width: 100px;
+}
+.seat {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px 100px 0px 0px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.n-a {
+  background-color: #3d3d48;
+}
+.selected {
+  background-color: #4be6f1;
+}
+.occupied {
+  background-color: #fff;
+}
+
+/* Total */
+.dynamic-num {
+  color: #4be6f1;
+  font-weight: 500;
+}
+
+/* screen */
+#screen {
+  border-top: 50px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 250px;
+  margin: 32px 0;
+}
+
+/* select */
+#movie-picker {
+  padding: 4px;
+  text-align: left;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-left: 8px;
+}

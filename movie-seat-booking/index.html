@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cinema</title>
+  </head>
+  <body>
+    <form>
+      <label for="movie-picker">Pick a movie:</label>
+      <select name="movies" id="movie-picker">
+        <option value="12">Spider-Man (12$)</option>
+        <option value="13">Batman (13$)</option>
+        <option value="11">Thor 3 (11$)</option>
+        <option value="12">Barbie (12$)</option>
+      </select>
+    </form>
+    <section class="seats-legend">
+      <div class="legend">
+        <div class="seat n-a"></div>
+        <p class="legend">N/A</p>
+      </div>
+      <div class="legend">
+        <div class="seat selected"></div>
+        <p class="legend">Selected</p>
+      </div>
+      <div class="legend">
+        <div class="seat occupied"></div>
+        <p class="legend">Occupied</p>
+      </div>
+    </section>
+    <div id="screen"></div>
+    <section class="seats-selection">
+      <div class="seat-block bk-s">
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+      </div>
+      <div class="seat-block bk-g">
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+      </div>
+      <div class="seat-block bk-s">
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+        <div class="seat occupied"></div>
+        <div class="seat n-a"></div>
+        <div class="seat n-a"></div>
+      </div>
+    </section>
+    <p class="summary">
+      You have selected
+      <span class="dynamic-num amount-ticket">0</span>
+      seats for a price of
+      <span class="dynamic-num total-price">$0</span>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
