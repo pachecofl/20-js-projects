@@ -1,3 +1,22 @@
 # 20 Web Projects With Vanilla JavaScript
-- [Hangman Game](https://hangman-game-self.vercel.app/)
-- [Movie Seat Booking](https://movie-seat-booking-one.vercel.app/)
+
+- [x] [Hangman Game](https://hangman-game-self.vercel.app/)
+- [x] [Movie Seat Booking](https://movie-seat-booking-one.vercel.app/)
+- [ ] Form Validator
+- [ ] Custom Video Player
+- [ ] Exchange Rate Calculator
+- [ ] DOM Array Methods
+- [ ] Menu Slider & Modal
+- [ ] Meal Finder
+- [ ] Expense Tracker
+- [ ] Music Player
+- [ ] Infinit Scroll Posts
+- [ ] Typing Game
+- [ ] Speech Text Reader
+- [ ] Memory Cards
+- [ ] Lyrics Search App
+- [ ] Relaxer App
+- [ ] Breakout Game
+- [ ] New Year Countdown
+- [ ] Sortable List
+- [ ] Speak Number Guessing Game
