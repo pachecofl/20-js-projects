@@ -60,6 +60,7 @@ function displayExpenses() {
 }
 
 //Event listeners
+//add transation
 btnAddTransaction.addEventListener("click", function (e) {
   e.preventDefault();
   //input values
@@ -75,9 +76,14 @@ btnAddTransaction.addEventListener("click", function (e) {
     calcDisplayBalance();
   }
 });
-
+//delete expense
 body.addEventListener("click", function (e) {
   if (e.target.className === "delete") {
+    const expenseIndex = expenses.findIndex(
+      (expense) => expense.text === e.target.nextElementSibling.textContent
+    );
+    expenses.splice(expenseIndex, 1);
+    console.log(expenseIndex, expenses);
     e.target.parentElement.remove();
   }
 });
