@@ -1,0 +1,64 @@
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ececec;
+  font-family: "Roboto", sans-serif;
+}
+
+/* TEXT */
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #939393;
+}
+
+.balance-text {
+  text-transform: uppercase;
+}
+
+.income {
+  color: #23ba23;
+}
+.expense {
+  color: #a21910;
+}
+
+/* LAYOUT */
+article {
+  width: 400px;
+  margin: 48px auto;
+}
+
+.inc-exp-container {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.divider {
+  width: 2px;
+  background-color: #e3e3e3;
+  height: 50px;
+}
+
+.income-container,
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 6px;
+}
