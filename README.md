@@ -8,7 +8,7 @@
 - [ ] DOM Array Methods
 - [ ] Menu Slider & Modal
 - [ ] Meal Finder
-- [ ] Expense Tracker
+- [x] Expense Tracker
 - [ ] Music Player
 - [ ] Infinit Scroll Posts
 - [ ] Typing Game
