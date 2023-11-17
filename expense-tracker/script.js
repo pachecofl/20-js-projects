@@ -15,23 +15,26 @@ const btnAddTransaction = document.querySelector(".add-transation");
 const body = document.querySelector("body");
 
 //Objects and variables
-const expenses = [
-  {
-    text: "Camera",
-    amount: -300,
-    id: 1,
-  },
-  {
-    text: "Salary",
-    amount: 2000,
-    id: 2,
-  },
-  {
-    text: "Trip",
-    amount: -800,
-    id: 3,
-  },
-];
+const localStorageTransactions = JSON.parse(localStorage.getItem("transactions"));
+const expenses = localStorage.getItem("transactions") !== null ? localStorageTransactions : [];
+
+// [
+//   {
+//     text: "Camera",
+//     amount: -300,
+//     id: 1,
+//   },
+//   {
+//     text: "Salary",
+//     amount: 2000,
+//     id: 2,
+//   },
+//   {
+//     text: "Trip",
+//     amount: -800,
+//     id: 3,
+//   },
+// ];
 let itemsNums = 1;
 //Functions
 function calcDisplayBalance() {
@@ -61,6 +64,7 @@ function displayExpenses() {
     </li>
     `;
   });
+  updateLocalStorage();
 }
 
 function deleteItem(id) {
@@ -68,6 +72,10 @@ function deleteItem(id) {
   expenses.splice(expenseIndex, 1);
   displayExpenses();
   calcDisplayBalance();
+}
+
+function updateLocalStorage() {
+  localStorage.setItem("transactions", JSON.stringify(expenses));
 }
 
 //Event listeners
