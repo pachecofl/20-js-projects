@@ -10,8 +10,8 @@
     <article>
       <h1>Expense Tracker</h1>
       <section class="balance-container">
-        <p class="balance-text">Your balance</p>
-        <span class="total-balance">$150.00</span>
+        <p class="balance-text balance">Your balance</p>
+        <p class="total-balance">$150.00</p>
         <div class="inc-exp-container">
           <div class="income-container">
             <p class="balance-text">Income</p>
@@ -25,21 +25,15 @@
         </div>
         <section>
           <h2>History</h2>
-          <ul class="expence-history">
-            <li>
-              <span>x</span>
-              <p>Camera</p>
-              <p>-300</p>
-            </li>
-          </ul>
+          <ul class="expence-history"></ul>
         </section>
         <section>
           <h2>Add new transation</h2>
           <form>
             <label for="text">Text</label>
-            <input type="text" id="text" />
-            <label for="amount">Amount</label>
-            <input type="text" id="amount" />
+            <input type="text" id="text" placeholder="Salary" />
+            <label for="amount">Amount (Add " - " for expenses)</label>
+            <input type="text" id="amount" placeholder="2000" />
             <button class="add-transation">Add transation</button>
           </form>
         </section>
